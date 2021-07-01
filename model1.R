@@ -57,7 +57,11 @@ plot(pred,type= "l",lty=1.8, col="blue")
 ggplot(model,aes(x= Hours,y= Scores))+geom_point()+geom_smooth(method = "lm")
 
 ##Prediction
-predict(model,newdata = p)
+predict(Model,newdata = p)
+
+##> predict(Model,newdata = p)
+##1 
+##92.90985 
 
 ##Accuracy
 rmse<- sqrt(mean(pred-Data$Scores)^2)
